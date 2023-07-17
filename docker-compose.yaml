@@ -7,3 +7,10 @@ services:
     volumes:
       - /usr/share/tesseract-ocr/4.00/tessdata:/usr/share/tesseract-ocr/4.00/tessdata
       - /data/stirling-pdf/config:/configs
+   environment:
+     APP_LOCALE: en_GB
+     APP_HOME_NAME: JJHome's PDF
+     APP_HOME_DESCRIPTION: One stop shop for all your PDF needs.
+     APP_NAVBAR_NAME: JJHome's PDF
+     APP_ROOT_PATH: /
+     ALLOW_GOOGLE_VISIBILITY: true
