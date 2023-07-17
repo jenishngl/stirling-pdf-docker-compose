@@ -3,13 +3,13 @@ services:
   stirling-pdf:
     image: frooodle/s-pdf:latest
     ports:
-      - '8080:8080'
+      - '3888:8080'
     volumes:
       - /usr/share/tesseract-ocr/4.00/tessdata:/usr/share/tesseract-ocr/4.00/tessdata
       - /data/stirling-pdf/config:/configs
     environment:
       APP_LOCALE: en_GB
-      APP_HOME_NAME: JJHome's PDF
+      APP_HOME_NAME: JJHome's PDF Tools
       APP_HOME_DESCRIPTION: One stop shop for all your PDF needs.
       APP_NAVBAR_NAME: PDF Tools
       APP_ROOT_PATH: /
