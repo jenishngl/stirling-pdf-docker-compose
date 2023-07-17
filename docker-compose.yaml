@@ -3,7 +3,7 @@ services:
   stirling-pdf:
     image: frooodle/s-pdf:latest
     ports:
-      - '3888:3888'
+      - '8080:8080'
     volumes:
       - /usr/share/tesseract-ocr/4.00/tessdata:/usr/share/tesseract-ocr/4.00/tessdata
       - /data/stirling-pdf/config:/configs
@@ -14,4 +14,3 @@ services:
       APP_NAVBAR_NAME: PDF Tools
       APP_ROOT_PATH: /
       ALLOW_GOOGLE_VISIBILITY: true
-      local.server.port: 3888
